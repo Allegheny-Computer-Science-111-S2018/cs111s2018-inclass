@@ -5,7 +5,7 @@ Spring 2018. If you want to clone this repository so that you can receive the
 source code that it stores, then you can type the following command:
 
 ```
-git clone git@github.com:Allegheny-Computer-Science-111-F2017/cs111-F2017-inclass.git
+git@github.com:Allegheny-Computer-Science-111-S2018/cs111s2018-inclass.git
 ```
 
 If you have already cloned this repository and you want to receive any updates
