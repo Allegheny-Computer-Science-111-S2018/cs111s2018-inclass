@@ -3,15 +3,15 @@ import java.util.Date;
 public class Increment {
   public static void main(String args[]) {
     System.out.println(new Date());
-    int num1 = 1;
-    int num2 = 2;
-    int num3 = ++num2;
-    int num4 = num1++;
+    int num_1 = 1;
+    int Num2 = 2;
+    int num3 = ++Num2;
+    int num4 = num_1++;
 
-    System.out.println("a = " + num1);
-    System.out.println("b = " + num2);
-    System.out.println("c = " + num3);
-    System.out.println("d = " + num4);
+    System.out.println("num1 = " + num_1);
+    System.out.println("num2 = " + Num2);
+    System.out.println("num3 = " + num3);
+    System.out.println("num4 = " + num4);
 
   }
 }
