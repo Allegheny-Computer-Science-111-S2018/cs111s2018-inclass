@@ -13,7 +13,7 @@ import javax.swing.JApplet;
 
 public class PaintScene extends JApplet
 {
-  
+
   private static final int WIDTH = 600;
   private static final int HEIGHT = 400;
 
@@ -23,8 +23,9 @@ public class PaintScene extends JApplet
    */
     public void paint(Graphics page)
     {
-        final int WIDTH = 600;
-        final int HEIGHT = 400;
-
+      page.setColor(Color.cyan);
+      page.fillRect(0,0,WIDTH,HEIGHT);
+      page.setColor(Color.red);
+      page.fillOval(50, 30, 40, 40);
     }
 }
