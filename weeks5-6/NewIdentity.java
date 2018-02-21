@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Random;
 
 public class NewIdentity
 {
@@ -11,10 +12,13 @@ public class NewIdentity
 		int position;
 		char letter;
 		
-		position = 2;
+		// position = 2; 
 		
 		// create an instance of Scanner
 		Scanner scan = new Scanner(System.in);
+		
+		// create an instance of Random
+		Random rand = new Random();
 		
 		// get the user's input
 		System.out.println("Enter your first name");
@@ -27,14 +31,17 @@ public class NewIdentity
 		job = scan.nextLine();
 		
 		// modify the user's input
+		position = rand.nextInt(firstName.length());
 		letter = firstName.charAt(position);
 		firstName = firstName.replace(letter, 'o');	
 		System.out.println("Your new first name is: "+firstName);
 		
-		lastName = lastName.substring(2,5); //concat("ov");
+		lastName = lastName.substring(1,3); //concat("ov");
 		System.out.println("Your new last name is: "+lastName);
 		
 		job = job.toUpperCase();
 		System.out.println("Your job is: "+job);
+		
+		System.out.println("Random float: " + rand.nextFloat()*10);
 	}
 }
