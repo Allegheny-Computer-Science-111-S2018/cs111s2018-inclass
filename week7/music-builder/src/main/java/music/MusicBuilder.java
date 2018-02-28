@@ -18,8 +18,10 @@ public class MusicBuilder {
     // display the name of the programmer and the date
     System.out.println("Janyl Jumadinova " + new Date());
 
+    Player player = new Player();
+
     // the following examples were taken from http://www.jfugue.org/examples.html
-    /*
+
     System.out.println("Playing string 1");
     player.play("C D E F G A B R R R");
 
@@ -28,7 +30,6 @@ public class MusicBuilder {
     Pattern p2 = new Pattern("V1 I[Flute] Rw     | Rw     | GmajQQQ  CmajQ");
     player.play(p1, p2);
 
-    */
     System.out.println("Playing string 3");
     // This is “Twinkle, twinkle, little star”
     Pattern pattern1 = new Pattern("C5q C5q G5q G5q A5q A5q Gh");
@@ -44,7 +45,6 @@ public class MusicBuilder {
     twinkleSong.add(pattern3);
     twinkleSong.add(pattern1);
     twinkleSong.add(pattern2);
-    Player player = new Player();
     player.play(twinkleSong);
 
   }
