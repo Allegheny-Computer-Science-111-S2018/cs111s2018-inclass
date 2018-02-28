@@ -19,19 +19,16 @@ public class MusicBuilder {
     System.out.println("Janyl Jumadinova " + new Date());
 
     // the following examples were taken from http://www.jfugue.org/examples.html
-    Player player = new Player();
-    
+    /*
     System.out.println("Playing string 1");
     player.play("C D E F G A B R R R");
 
-    /*
     System.out.println("Playing string 2");
     Pattern p1 = new Pattern("V0 I[Piano] Eq Ch. | Eq Ch. | Dq Eq Dq Cq");
     Pattern p2 = new Pattern("V1 I[Flute] Rw     | Rw     | GmajQQQ  CmajQ");
     player.play(p1, p2);
-    */
 
-    /*
+    */
     System.out.println("Playing string 3");
     // This is “Twinkle, twinkle, little star”
     Pattern pattern1 = new Pattern("C5q C5q G5q G5q A5q A5q Gh");
@@ -47,7 +44,8 @@ public class MusicBuilder {
     twinkleSong.add(pattern3);
     twinkleSong.add(pattern1);
     twinkleSong.add(pattern2);
+    Player player = new Player();
     player.play(twinkleSong);
-    */
+
   }
 }
