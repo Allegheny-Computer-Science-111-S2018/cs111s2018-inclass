@@ -8,23 +8,9 @@ public class IsVowel
     System.out.println("Enter a character");
     char character;
     character = input.next().charAt(0);
-    if(character == 'a')
-    {
-      System.out.println("Character " + character + " is a vowel");
-    }
-    else if(character == 'o')
-    {
-      System.out.println("Character " + character + " is a vowel");
-    }
-    else if(character == 'e')
-    {
-      System.out.println("Character " + character + " is a vowel");
-    }
-    else if(character == 'i')
-    {
-      System.out.println("Character " + character + " is a vowel");
-    }
-    else if(character == 'u')
+    if(character == 'a' || character == 'o'
+      || character == 'e' || character == 'i'
+      || character == 'u')
     {
       System.out.println("Character " + character + " is a vowel");
     }
