@@ -4,8 +4,21 @@
 public class GradeBook {
 
   // instance variable
-  private String courseName = "Music 101";
-  private String courseTag = "QR";
+  private String courseName;
+  private String courseTag;
+
+  /** Constructor with one parameter.
+  */
+  public GradeBook (String name) {
+    courseName = name;
+  }
+
+  /** Constructor with two parameters.
+  */
+  public GradeBook (String name, String tag) {
+    courseName = name;
+    courseTag = tag;
+  }
 
   /** Method to change the value of the courseName.
   */
