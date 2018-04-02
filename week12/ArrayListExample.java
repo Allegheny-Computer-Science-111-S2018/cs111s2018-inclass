@@ -12,16 +12,18 @@ import java.io.FileNotFoundException;
 
 public class ArrayListExample {
   public static void main (String args[]) {
-      // declare the starting file and scanner
+    // declare the starting file and scanner
     File inputsFile = null;
     Scanner input = null;
     // connect the scanner to the input file
     try {
-      inputsFile = new File("input/words.txt");
+      inputsFile = new File("words.txt");
       input = new Scanner(inputsFile);
     } catch (FileNotFoundException noFile) {
       System.out.println("Unable to locate file");
     }
+
+
 
   }
 }
