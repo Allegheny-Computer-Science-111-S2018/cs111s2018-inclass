@@ -23,7 +23,41 @@ public class ArrayListExample {
       System.out.println("Unable to locate file");
     }
 
+    ArrayList<String> twitterWords = new ArrayList<String>();
+    // read the text file and populate ArrayList
+    while(input.hasNext()) {
+      String word = input.next();
+      twitterWords.add(word);
+    }
+    System.out.println(twitterWords);
 
+    // print each element on a new line
+    int index = 0;
+    while(index < twitterWords.size()) {
+      String word = twitterWords.get(index);
+      System.out.println(word);
+      index++;
+    }
+    System.out.println();
 
+    // remove all words ending with "s"
+    Iterator<String> wordsIterator = twitterWords.iterator();
+    while(wordsIterator.hasNext()) {
+      String word = wordsIterator.next();
+      if(word.endsWith("s")) {
+        wordsIterator.remove();
+        System.out.println("Removed " + word);
+      }
+    }
+    System.out.println(twitterWords);
+
+    System.out.println();
+    // print each element on a new line backwards
+    index = twitterWords.size() - 1;
+    while(index > 0) {
+      String word = twitterWords.get(index);
+      System.out.println(word);
+      index--;
+    }
   }
 }
