@@ -13,7 +13,7 @@ public class CrimeFileReader {
 	private ArrayList<String> list;
 
   public CrimeFileReader() {
-    list= new ArrayList<String>();
+    list = new ArrayList<String>();
   }
 
 }

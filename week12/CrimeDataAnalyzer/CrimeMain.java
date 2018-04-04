@@ -21,7 +21,7 @@ public class CrimeMain {
     System.out.println("Welcome to the Crime Data Manager.");
     System.out.println("What operation would you like to perform?");
     System.out.println("Available options: "
-        + "read, analyze, quit."
+        + "read, analyze, quit. "
         + "You must first read, then you can analyze.");
 
     Scanner userScanner = new Scanner(System.in);
@@ -33,14 +33,16 @@ public class CrimeMain {
       String command = userScanner.next();
       if (command.equals("read")) {
         reader.readFile();
-      } else if (command.equals("analyze")) {
+      /*} else if (command.equals("analyze")) {
         System.out.println("What would you like to search for?");
         String searchWord = userScanner.next();
         ArrayList<String> searchList = reader.find(searchWord);
+        System.out.println(searchList.get(1));
+        System.out.println(searchWord + " occurred " + searchList.size() + " times");
+
         analyzer.findDistricts(searchList);
-        System.out.println(searchWord+" occurred "+analyzer.getCount()+" times");
-        System.out.println(searchWord+" occurred in "+analyzer.getDistricts().size()
-                          +" districts, including: \n"+analyzer.getDistricts());
+        System.out.println(searchWord+" occurred in " + analyzer.getDistricts().size()
+                          +" districts, including: \n" + analyzer.getDistricts());*/
       } else if (command.equals("quit")) {
         System.out.println("Thank you for using the Crime Data Manager.");
         break;
