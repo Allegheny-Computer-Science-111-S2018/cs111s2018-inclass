@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="8.1">
-<file name="/home/j/jjumadinova/repos/2017-2018/cs111s2018/slides/week13/Loops_Switch/Graphics/src/main/java/loops/DisplayScene.java">
+<file name="/home/j/jjumadinova/repos/2017-2018/cs111s2018-inclass/week13/Graphics/src/main/java/loops/DisplayScene.java">
 </file>
-<file name="/home/j/jjumadinova/repos/2017-2018/cs111s2018/slides/week13/Loops_Switch/Graphics/src/main/java/loops/PaintScene.java">
+<file name="/home/j/jjumadinova/repos/2017-2018/cs111s2018-inclass/week13/Graphics/src/main/java/loops/PaintScene.java">
 </file>
 </checkstyle>
