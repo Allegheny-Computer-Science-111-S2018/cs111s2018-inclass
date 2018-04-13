@@ -40,9 +40,8 @@ public class PaintScene extends JApplet {
     }
 
     // TO DO: 1) Set a different Color
-
+    page.setColor(Color.blue);
     // TO DO: 2) Create a total # of randomly created squares, use do while loop
-    // 2.1) Reset x and y starting locati// TO DO: 3) Set a different Color
     xpoint = 50;
     ypoint = 100;
     count = 0;
@@ -51,15 +50,16 @@ public class PaintScene extends JApplet {
       xpoint += rand.nextInt(80);
       ypoint += rand.nextInt(80);
       count ++;
-    } while(count < total);
+    }
+    while (count < total);
 
-
+    page.setColor(Color.green);
     // TO DO: 4) Create a total # of randomly created circles, use a for loop
     // 4.1) Reset x and y starting location
     // 4.2) Reset the count
     // 4.3) Use fillOval method
     xpoint = 220;
-    ypoint = 400;
+    ypoint = 30;
     for (count = 0; count < total; count++ ) {
       page.fillOval(xpoint, ypoint, size, size);
       xpoint += rand.nextInt(50);
