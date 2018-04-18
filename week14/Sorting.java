@@ -33,7 +33,7 @@ public class Sorting {
 		// iterate through the array
 		for(int i = 0; i < numbers.length; i++) {
 			// print out each element of the array
-			System.out.println(numbers[i]);
+			// System.out.println(numbers[i]);
     }
 
 		// Record the end time of the sorting
