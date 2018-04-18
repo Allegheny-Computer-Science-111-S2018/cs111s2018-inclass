@@ -29,12 +29,19 @@ public class Sorting {
 		long startTime = System.nanoTime();
 
 		// TO DO: sort the array in ascending order
+		int temp = numbers[0];
 
 		// iterate through the array
-		for(int i = 0; i < numbers.length; i++) {
-			// print out each element of the array
-			// System.out.println(numbers[i]);
-    }
+		/*for(int i = 0; i < numbers.length; i++) {
+			for(int j = 0; j < numbers.length - 1; j++) {
+				if(numbers[j] > numbers[j+1]) {
+					temp = numbers[j];
+					numbers[j] = numbers[j+1];
+					numbers[j+1] = temp;
+				}
+			}
+		}*/
+		Arrays.sort(numbers);
 
 		// Record the end time of the sorting
 		long endTime = System.nanoTime();
